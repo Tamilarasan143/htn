@@ -7,8 +7,8 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 
-function createData(name, calories, fat, carbs, protein) {
-  return { name, calories, fat, carbs, protein };
+function createData(Emloyees,ID,Salary,Age,DOB) {
+  return { Emloyees,ID,Salary,Age,DOB };
 }
 
 const rows = [
@@ -41,10 +41,10 @@ export default function BasicTable() {
               <TableCell component="th" scope="row">
                 {row.name}
               </TableCell>
-              <TableCell align="right">{row.calories}</TableCell>
-              <TableCell align="right">{row.fat}</TableCell>
-              <TableCell align="right">{row.carbs}</TableCell>
-              <TableCell align="right">{row.protein}</TableCell>
+              <TableCell align="right">{row.ID}</TableCell>
+              <TableCell align="right">{row.Salary}</TableCell>
+              <TableCell align="right">{row.Age}</TableCell>
+              <TableCell align="right">{row.DOB}</TableCell>
             </TableRow>
           ))}
         </TableBody>
